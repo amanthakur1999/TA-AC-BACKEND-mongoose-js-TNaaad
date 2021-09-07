@@ -6,9 +6,9 @@ let userSchema = new Schema(
   {
     name: { type: String },
     passward: { type: String, minlength: 5, maxlength: 15 },
-    date: {
+    createdAt: {
       type: Date,
-      default: date,
+      default: new Date(),
     },
   },
   { timestamps: true }
